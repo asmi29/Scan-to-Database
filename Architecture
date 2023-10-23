@@ -1,0 +1,11 @@
+   web browser hosted on Azure Virtual Machines
+                       |
+Azure API Management with Post method extract the image
+                       |
+     Stores the image in Azure Blob Storage 
+                       |
+Azure Cognitive Services takes the image from storage
+                       |
+        Extract the data from the image
+                       |
+        Transfer data to Azure Cosmos DB
