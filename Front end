@@ -1,0 +1,318 @@
+*******Login/Signup Page*******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff; /* Background color: white */
+        }
+
+        .login-container {
+            background-color: #ffffff; /* Login form background color: white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .login-form h1 {
+            color: #0099cc; /* Header text color: blue */
+            font-size: 24px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ffcc00; /* Input field border color: yellow */
+            border-radius: 5px;
+        }
+
+        .forgot-password {
+            color: #ffcc00; /* Forgot password link color: yellow */
+        }
+
+        #login-button {
+            background-color: #0099cc; /* Login button color: blue */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #login-button:hover {
+            background-color: #0077aa; /* Hover color for login button: darker blue */
+        }
+
+        .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .or-line {
+            flex: 1;
+            height: 1px;
+            background-color: #ffcc00; /* Divider line color: yellow */
+        }
+
+        .or-text {
+            color: #ffcc00; /* "OR" text color: yellow */
+            margin: 0 10px;
+        }
+
+        #google-login-button, #facebook-login-button {
+            background-color: #ffcc00; /* Google and Facebook login button color: yellow */
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        #google-login-button:hover, #facebook-login-button:hover {
+            background-color: #ffaa00; /* Hover color for social media login buttons: darker yellow */
+        }
+
+        .signup-link {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .signup-link a {
+            color: #0099cc; /* Sign up link color: blue */
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Your App Login</h1>
+            <input type="text" id="username" placeholder="Username or Email">
+            <input type="password" id="password" placeholder="Password">
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <button id="login-button">Login</button>
+            <div class="or-divider">
+                <span class="or-line"></span>
+                <span class="or-text">OR</span>
+                <span class="or-line"></span>
+            </div>
+            <button id="google-login-button">Login with Google</button>
+            <button id="facebook-login-button">Login with Facebook</button>
+        </div>
+        <div class="signup-link">
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+*******Home Page*******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App Home</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff; /* Background color: white */
+        }
+
+        .options-container {
+            background-color: #ffffff; /* Container background color: white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .option-link {
+            display: block;
+            color: #0099cc; /* Link text color: blue */
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="options-container">
+        <a href="newdatabaseform.html" class="option-link">Create New Database</a>
+        <a href="existing-database.html" class="option-link">Go to Existing Database</a>
+    </div>
+</body>
+</html>
+
+
+*******New Data base*******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Database</title>
+    <style>
+        body {
+            background-color: #ffffff; /* Background color: yellow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff; /* Form background color: white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .form-input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #0099cc; /* Input field border color: blue */
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            background-color: #0099cc; /* Submit button color: blue */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #0077aa; /* Hover color for submit button: darker blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Create New Database</h1>
+        <form action="new-database.html">
+            <input type="text" class="form-input" placeholder="Database Name">
+            <input type="password" class="form-input" placeholder="Password">
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+*******Scanner*******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Photo Capture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: yellow; /* Set the background color to yellow */
+            color: blue; /* Set text color to blue */
+        }
+
+        #camera-feed {
+            margin: 20px 0;
+        }
+
+        #capture-button {
+            background-color: blue; /* Set button background color to blue */
+            color: white; /* Set button text color to white */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #download-link {
+            color: blue; /* Set link color to blue */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Camera Photo Capture</h1>
+    <div id="camera-feed">
+        <video id="video" autoplay playsinline></video>
+    </div>
+    <button id="capture-button">Capture Photo</button>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <a id="download-link" style="display: none;" download="photo.jpg">Download Photo</a>
+    <script>
+        const video = document.getElementById('video');
+        const captureButton = document.getElementById('capture-button');
+        const canvas = document.getElementById('canvas');
+        const downloadLink = document.getElementById('download-link');
+
+        async function initCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+            } catch (error) {
+                console.error('Error accessing the camera: ' + error.message);
+            }
+        }
+
+        function capturePhoto() {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+            downloadLink.href = canvas.toDataURL('image/jpeg');
+            downloadLink.style.display = 'block';
+        }
+
+        initCamera();
+
+        captureButton.addEventListener('click', capturePhoto);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
