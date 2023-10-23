@@ -1,5 +1,5 @@
 # Scan-to-Database
-Clud tuning project which helps to scan and autimatically creates a database fore user.
+Cloud tuning project which helps to scan and automatically creates a database for user.
 In this we have a login page then user can go to their home page and select if he/she wants to go for a new databse or an existing one.
 Case1:
 New databse-
